@@ -1,0 +1,64 @@
+Keys:
+Tab Toggle edit/object mode
+1 Vertex mode
+2 Edge mode
+3 Face mode
+Ctrl+Numpad1 Frontal view
+A Select all
+AA Deselect all
+E Extrude
+S Scale
+G Move
+GG Move along edge
+Ctrl+R Loopcut(s)
+I Inset
+Shift Space+G Show move gizmo (hold shift scpace to open menu and then G)
+Alt+E Extrude along normals
+Shift+D Duplicate
+Alt+Click Edge Loop select
+Alt+Ctrl Click Edge Ring select
+B Box select
+Ctrl+RMB Drag Lasso select
+L Select linked geometry
+X Delete/dissolve vert/edge/face
+O Proportional editing
+Ctrl+Z Undo
+Shift+Space Basic tools
+N Side panel
+Ctrl+Numpad1 Back view
+
+Operations:
+1. Add addon Mesh: Auto Mirror and Mesh: Loop Tools
+2. Add cube; Character should face positive y
+3. Move gizmo is visible in Move tool object mode
+4. N, edit->Auto Mirror orientation=negative, click AutoMirror btn (setups miror mod)
+5. edit mode, A, Ctrl+Numpad1, S scale torso, G move it under 1m
+6. 3, select top face, shift space + G, lower it half, E to extrude half
+7. 2, bottom most edge move in to form hip
+8. 3, select leg face, extrude it, scale it in
+9. G to move it so it's in line, R to rotate it flat, E to extrude, make it flat
+10. E for leg again, E for foot, S Z 0 to flatten foot, also input 0 in z
+11. important that origin of model is between feet at 0,0,0
+12. Select foot face, S y 0 to flatten, E
+13. Select top chest face, E x 2 so chest is about height of legs
+14. Select side face, E, S in, R and G to get angle for arms
+15. E for arm, S in, E second arm part, E a little, S in and E for wrist
+16. E a little agin, S in y, then E for thumb, E for hand
+17. Select thumb face E
+18. ctr+R add 3 loopcuts to hand
+19. select last hand face and O, set proportional editing radius to hand,  
+now use G and R to bend hand, O, tweak with move gizmo
+20. One lopcut to thumb, select face R, G, ctrl+num+ to increase selection R, G
+to bend thumb, ctrl+num- to decrease selection
+21. select neck face, E, S in, G in
+21. E little neck S to big head, E head to heigth of torso
+22. loop cut head in 1/3 height 
+23. select it's edge and G it out to jaw line, also move out boottom of jaw edge
+24. add loopcut on middle neck and S in down
+25. add loopcut above jaw and make flat place on eys where jaw is 45 deg sloped
+26. loopcut on head near top, select top face and scale is Down and move it in
+27. 1 and tweak head vertecies a bit with G and gizmo, 
+rotate a lot to see it from angles when tweaking
+28. alt + edge to select loop on bottom of belly move it down to croch
+29. select 2 loops on belly and scale them out to get of rectangle a bit
+Finished on tweak body, forgot to tweak foot far before
