@@ -26,39 +26,79 @@ Ctrl+Z Undo
 Shift+Space Basic tools
 N Side panel
 Ctrl+Numpad1 Back view
+Middle mouse btn rotate view
+Middle mouse btn + Hold shift key to pan view
 
 Operations:
-1. Add addon Mesh: Auto Mirror and Mesh: Loop Tools
-2. Add cube; Character should face positive y
-3. Move gizmo is visible in Move tool object mode
-4. N, edit->Auto Mirror orientation=negative, click AutoMirror btn (setups miror mod)
-5. edit mode, A, Ctrl+Numpad1, S scale torso, G move it under 1m
-6. 3, select top face, shift space + G, lower it half, E to extrude half
-7. 2, bottom most edge move in to form hip
-8. 3, select leg face, extrude it, scale it in
-9. G to move it so it's in line, R to rotate it flat, E to extrude, make it flat
-10. E for leg again, E for foot, S Z 0 to flatten foot, also input 0 in z
-11. important that origin of model is between feet at 0,0,0
-12. Select foot face, S y 0 to flatten, E
-13. Select top chest face, E x 2 so chest is about height of legs
-14. Select side face, E, S in, R and G to get angle for arms
-15. E for arm, S in, E second arm part, E a little, S in and E for wrist
-16. E a little agin, S in y, then E for thumb, E for hand
-17. Select thumb face E
-18. ctr+R add 3 loopcuts to hand
-19. select last hand face and O, set proportional editing radius to hand,  
+1. Setup uv coloring: Go to Shading tab, add cube, download teachers palette files, 
+add new nodes, add palette and emissions texture,
+connect color to base color and color to emission, set emission strength to 20 (gloving eys)
+Go to uv editing, select palette file from dropdown
+In viewport shading options set color to texture
+In left top cornr select editor type to shader and select palette node to activate it
+Switch back to image editor to see palette image
+Switch to uv editor, tab, A to see mesh uv's
+Now select all faces on cube, same in uv's, S, 0, Now move dot with G to color cube with uv's and palette image
+2. Enable backface culling in viewport shading options to spot when polygons in model face wrong way
+3. Use numpad 1,3,7 to toogle fron, side, top view, back side with ctrl
+4. Character should face positive y axis, this is important convention for model to work in game engine
+5. Add addon Mesh: Auto Mirror and Mesh: Loop Tools
+6. Add cube; Character should face positive y
+7. Move gizmo is visible in Move tool object mode
+8. N, edit->Auto Mirror orientation=negative, click AutoMirror btn (setups miror mod)
+9. edit mode, A, Ctrl+Numpad1, S scale torso, G move it under 1m
+10. 3, select top face, shift space + G, lower it half, E to extrude half
+11. 2, bottom most edge move in to form hip
+12. 3, select leg face, extrude it, scale it in
+13. G to move it so it's in line, R to rotate it flat, E to extrude, make it flat
+14. E for leg again, E for foot, S Z 0 to flatten foot, also input 0 in z
+15. important that origin of model is between feet at 0,0,0
+16. Select foot face, S y 0 to flatten, E
+17. Select top chest face, E x 2 so chest is about height of legs
+18. Select side face, E, S in, R and G to get angle for arms
+19. E for arm, S in, E second arm part, E a little, S in and E for wrist
+20. E a little agin, S in y, then E for thumb, E for hand
+21. Select thumb face E
+22. ctr+R add 3 loopcuts to hand
+23. select last hand face and O, set proportional editing radius to hand,  
 now use G and R to bend hand, O, tweak with move gizmo
-20. One lopcut to thumb, select face R, G, ctrl+num+ to increase selection R, G
+24. One lopcut to thumb, select face R, G, ctrl+num+ to increase selection R, G
 to bend thumb, ctrl+num- to decrease selection
-21. select neck face, E, S in, G in
-21. E little neck S to big head, E head to heigth of torso
-22. loop cut head in 1/3 height 
-23. select it's edge and G it out to jaw line, also move out boottom of jaw edge
-24. add loopcut on middle neck and S in down
-25. add loopcut above jaw and make flat place on eys where jaw is 45 deg sloped
-26. loopcut on head near top, select top face and scale is Down and move it in
-27. 1 and tweak head vertecies a bit with G and gizmo, 
+25. select neck face, E, S in, G in
+26. E little neck S to big head, E head to heigth of torso
+27. loop cut head in 1/3 height 
+28. select it's edge and G it out to jaw line, also move out boottom of jaw edge
+29. add loopcut on middle neck and S in down
+30. add loopcut above jaw and make flat place on eys where jaw is 45 deg sloped
+31. loopcut on head near top, select top face and scale is Down and move it in
+32. 1 and tweak head vertecies a bit with G and gizmo, 
 rotate a lot to see it from angles when tweaking
-28. alt + edge to select loop on bottom of belly move it down to croch
-29. select 2 loops on belly and scale them out to get of rectangle a bit
-Finished on tweak body, forgot to tweak foot far before
+33. alt + edge to select loop on bottom of belly move it down to croch
+34. select 2 loops on belly and scale them out to get of rectangle a bit
+35. select side faces of feet S X shift make them wider 
+36. create boot by adding loopcut above foot and scale it out, 
+another loopcut a little above and scale it down a bit lover than leg
+37. above lower leg add loopcut to form a knee (2 loopcuts)
+38. scale bottom of feet wider (cartoony look)
+39. add loopcut above elbov and another above wrist
+40. select chest edge and shift space + G move it out a bit to puff it up, same for lower one
+41. in the model back, grab and move edge to form S shape, shoilder edge move out, one belov to
+42. 2, ctrl+edge click on knees to select ring, move G to bend legs a bit (for bones later)
+43. same for elbovs but move them back to curve them a bit
+44. 3, A, color model's skin tone
+45. select chest face, ctrl + numpad+, select legs, arms and chest for clothing selection, 
+shift and click to remove head selection from it, than pick jumsuit color
+46. select bootom faces of boot and ctrl + numpad+ to select boot faces, color it black
+47. select middle loop faces of legs, ctrl+ numpad+ to select pants, make them brown color
+48. tweak model when needed with 1 2 3 mode
+48. add black belt with coloring, loop select with alt + edge click and twak belt, 
+S to scale it down a bit
+49. select belt faces, alt + E and extrude it along normals if u want extruded belt
+50. color sleave with dark red
+51. select jaw, move it it to make it smaller, from top persp view rotate it to form a 'nose' a bit
+52. adding eys: select eye face shift d, disable cliping on moddifier on it, 
+scale it down, move it down, extrude eyes, L to select all linked, R, S, G, color it black 
+enable clipping after editing
+53. name character, shift + D to duplicate and hide for a template copy
+54. now i skip meny stuff about modeling to go to armature
+55.
