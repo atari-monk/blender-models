@@ -100,5 +100,5 @@ S to scale it down a bit
 scale it down, move it down, extrude eyes, L to select all linked, R, S, G, color it black 
 enable clipping after editing
 53. name character, shift + D to duplicate and hide for a template copy
-54. now i skip meny stuff about modeling to go to armature
-55.
+54. skiping rest modeling stuff, armature
+55. skiping notes to do it fast, besides they are useless at this point
